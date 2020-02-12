@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplikasi Pemula</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="count">Tambah</string>
+    <string name="toast">Toast</string>
+    <string name="random">Acak</string>
+    <string name="textview_number">0</string>
+    <string name="decrease">Kurang</string>
+    <string name="show_hide">Tampil/Sembunyi</string>
+    <string name="color_random_button">Bg Acak</string>
+    <string name="reset">Setel Ulang</string>
+</resources>

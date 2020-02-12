@@ -52,9 +52,7 @@ public class MainActivity extends AppCompatActivity {
         reset.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                tv_number.setText("0");
-                ConstraintLayout constraintLayout = findViewById(R.id.background);
-                constraintLayout.setBackgroundColor(Color.parseColor("#008577"));
+                reset();
             }
         });
         colorRandom.setOnClickListener(new View.OnClickListener(){
@@ -124,8 +122,9 @@ public class MainActivity extends AppCompatActivity {
     private void setRandom(){
         Random random ;
         random = new Random();
-        randomNumber =  random.nextInt(80-65)+65;
+        randomNumber =  random.nextInt(100-1)+1;
         tv_number.setText(""+randomNumber);
+        txt_number = String.valueOf(randomNumber);
     }
     private void setIncrease(){
         sum = Integer.parseInt(tv_number.getText().toString())+1;
@@ -152,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void hideShow(){
+    private void hideShow(){
         TextView textView = findViewById(R.id.textview_first);
         if(textView.getVisibility()== View.VISIBLE){
             textView.setVisibility(View.INVISIBLE);
@@ -162,5 +161,12 @@ public class MainActivity extends AppCompatActivity {
             textView.setVisibility(View.VISIBLE);
             isVisible = false;
         }
+    }
+    private void reset(){
+        tv_number.setVisibility(View.VISIBLE);
+        tv_number.setText("0");
+        ConstraintLayout constraintLayout = findViewById(R.id.background);
+        constraintLayout.setBackgroundColor(Color.parseColor("#008577"));
+        isVisible = false;
     }
 }
