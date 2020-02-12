@@ -7,7 +7,7 @@
     <string name="random">Acak</string>
     <string name="textview_number">0</string>
     <string name="decrease">Kurang</string>
-    <string name="show_hide">Tampil/Sembunyi</string>
+    <string name="show_hide">Tmpl/Smbny</string>
     <string name="color_random_button">Bg Acak</string>
     <string name="reset">Setel Ulang</string>
 </resources>
